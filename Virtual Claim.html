@@ -1,0 +1,848 @@
+
+<!-- saved from url=(0055)https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default -->
+<html style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>    
+    var base_url = "https://vclaim.bpjs-kesehatan.go.id/VClaim";
+    const config = {};
+
+    config.ESEP_RJ = 1;
+    config.ESEP_RANAP = 1;
+    config.FINGER_RANAP = 1;
+    config.ESEP_FASTLINE = 0;
+    config.DBTFMS_FASKES_BERGERAK = 0;
+</script>
+
+
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Virtual Claim</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="./Virtual Claim_files/css" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(1)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(2)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(3)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(4)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(5)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(6)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(7)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(8)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(9)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(10)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(11)" rel="stylesheet">
+
+    <link href="./Virtual Claim_files/css(12)" rel="stylesheet">
+
+    <script>
+        window.paceOptions = {
+            ajax: {
+                ignoreURLs: ['signalr', '__browserLink', 'browserLinkSignalR'],
+                trackWebSockets: false
+            },
+            target: '.loading-container'
+        }
+    </script>
+
+    <script src="./Virtual Claim_files/jQuery"></script>
+
+    
+    <link rel="icon" href="https://vclaim.bpjs-kesehatan.go.id/VClaim/image/bpjsIcon.ico">
+    <style>
+        .para {
+            color: black;
+            font-weight: bold;
+            white-space: nowrap;
+            clear: both;
+            float: left;
+        }
+
+        .floating-logo {
+          background: #ffffff;
+          color: #ffffff !important;
+          display: block;
+          padding: 7px;
+          box-shadow: 4px 4px #acb5af;
+          border-radius: 4px;
+          position: fixed;
+          bottom: 2%;
+          width: 120px;
+          height: 50px;
+          right: 1%;
+          text-align: center;
+          z-index: 1051;
+        }
+    </style>
+
+<style>.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{flex-direction:row;padding:0}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;padding:0;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em;padding:0}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(100,150,200,.5)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-no-transition{transition:none!important}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;flex-direction:column;justify-content:center;width:60em;max-width:100%;padding:1.25em;border:none;border-radius:5px;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:flex;flex-direction:column;align-items:center;padding:0 1.8em}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0;padding:0 1.6em}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 transparent #2778c4 transparent}.swal2-styled{margin:.3125em;padding:.625em 1.1em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#2778c4;color:#fff;font-size:1.0625em}.swal2-styled.swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#d14529;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#757575;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;height:.25em;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;align-items:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;transition:color .1s ease-out;border:none;border-radius:5px;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close:focus{outline:0;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;justify-content:center;margin:0;padding:0 1.6em;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-input-label{display:flex;justify-content:center;margin:1em auto}.swal2-validation-message{display:none;align-items:center;justify-content:center;margin:0 -2.7em;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}</style></head>
+<body class="skin-black pace-done pace-done" style="height: auto;">
+    <!-- Site wrapper -->
+    <div id="containerpdf" class="hidden">
+        <iframe id="iframe_fastline_cetak_esep" src="./Virtual Claim_files/saved_resource.html" frameborder="0" style="top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+    <div class="wrapper" id="main_wrapper" style="height: auto;">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>V</b>C</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Virtual</b><b style="color:red">Claim</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    &nbsp;<b style="font-style:normal;font-family:Arial">MENU</b>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown messages-menu" id="li_notifikasi_JR">
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="./Virtual Claim_files/people.png" class="user-image" alt="User Image">
+                                <span class="hidden-xs">RSUD Tanjung Priok</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="./Virtual Claim_files/people(1).png" class="img-circle" alt="User Image">
+                                    <p>
+                                        RSUD Tanjung Priok
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="https://registrasi.bpjs-kesehatan.go.id/registrasi/Login/rubah_password" class="btn btn-default btn-flat">Ubah Password</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Logout" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="loading-container" id="loading-container" name="loading-container" style="width:100%; height:0px;"><div class="pace  pace-inactive pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div></div>
+        <!-- =============================================== -->
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar" id="sidebar_wrapper">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="./Virtual Claim_files/people(1).png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>RSUD Tanjung Priok</p>
+                        <a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#"><i class="fa fa-circle text-success"></i> RSUD TANJUNG PRIOK</a>
+                    </div>
+                </div>
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+								<ul class="sidebar-menu">
+									<li class="header">Virtual Claim</li>
+									<li class="treeview">
+										<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default">
+											<i class="fa fa-pie-chart"></i> <span>Dashboard</span>
+										</a>
+									</li>
+										<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-book text-yellow"></i> <span>SEP</span>
+												<span class="pull-right-container">
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+															<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/SEP/Piloting"><i class="fa fa-circle-o text-yellow"></i> Pembuatan SEP</a></li>
+																									<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Penjaminan"><i class="fa fa-circle-o text-yellow"></i> Persetujuan SEP</a></li>
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/SEP/UpdatePulangSEP"><i class="fa fa-circle-o text-yellow"></i> Update Pulang SEP</a></li>
+											</ul>
+										</li>
+																			<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-medkit text-green"></i> <span>Rujukan</span>
+												<span class="pull-right-container">
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Rujukan/New"><i class="fa fa-circle-o text-green"></i> Form Rujukan</a></li>
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Rujukan/RujukanKhusus"><i class="fa fa-circle-o text-green"></i> Rujukan Khusus</a></li>
+												
+											</ul>
+										</li>
+																			<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-send text-aqua"></i> <span>Rujuk Balik (PRB)</span>
+												<span class="pull-right-container">
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/SRB"><i class="fa fa-circle-o text-green"></i> Form Entry</a></li>
+											</ul>
+										</li>
+																				<li class="treeview">
+												<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+													<i class="fa fa-clock-o text-yellow"></i> <span>Kunjungan Kontrol/Inap</span>
+													<span class="pull-right-container">
+														
+														<i class="fa fa-plus-circle pull-right"></i>
+													</span>
+												</a>
+												<ul class="treeview-menu">
+													<li>
+														<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/RencanaKontrol/New"><i class="fa fa-circle-o text-green"></i> Form Entry</a>
+													</li>
+												</ul>
+											</li>
+
+											<li class="treeview">
+												<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+													<i class="fa fa-users text-yellow"></i> <span>Peserta HD Infectious</span>
+													<span class="pull-right-container">
+														<i class="fa fa-plus-circle pull-right"></i>
+													</span>
+
+												</a>
+												<ul class="treeview-menu">
+													<li>
+														<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/FlaggingPeserta"><i class="fa fa-circle-o text-green"></i> Form Entry</a>
+													</li>
+												</ul>
+											</li>
+                    
+											<li class="treeview">
+												<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+													<i class="fa fa-anchor text-aqua"></i>
+													<span>Digital Validation</span>
+													<span class="pull-right-container">
+														
+														<i class="fa fa-plus-circle pull-right"></i>
+													</span>
+												</a>
+												<ul class="treeview-menu">
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Diva"><i class="fa fa-circle-o text-aqua"></i> Form Diva</a></li>
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Diva/MonitoringDiva"><i class="fa fa-circle-o text-aqua"></i> Monitoring Klaim Diva</a></li>
+												</ul>
+											</li>
+                    
+										<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-money text-yellow"></i> <span>Klaim</span>
+												<span class="pull-right-container">
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Klaim/KlaimTagihan"><i class="fa fa-circle-o text-yellow"></i> Data Klaim</a></li>
+											</ul>
+										</li>
+
+										<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-puzzle-piece text-purple"></i> <span>Jaminan</span>
+												<span class="pull-right-container">
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Jaminan"><i class="fa fa-circle-o text-purple"></i> INSIDEN</a></li>
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Bapel"><i class="fa fa-circle-o text-purple"></i> Form Dugaan PAK</a></li>
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Bapel/MonitoringBapel"><i class="fa fa-circle-o text-purple"></i> Monitoring Bapel JKK</a></li>
+											</ul>
+										</li>
+
+										<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-calendar text-olive"></i> <span>Treatment Planning</span>
+												<span class="pull-right-container">
+													<small class="label  bg-red">new</small>
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Treatment/jadwaloperasi"><i class="fa fa-circle-o text-olive"></i> Jadwal Operasi</a></li>
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Treatment/kemoterapi"><i class="fa fa-circle-o  text-olive"></i> Kemoterapi/Radioterapi</a></li>
+											</ul>
+										</li>
+
+										<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-gears text-red"></i> <span>Referensi</span>
+												<span class="pull-right-container">
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Setting/RuangRawat"><i class="fa fa-circle-o text-red"></i> Ruang Rawat</a></li>
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Setting/Dokter"><i class="fa fa-circle-o  text-red"></i> Dokter</a></li>
+											</ul>
+										</li>
+
+										<li class="treeview">
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#">
+												<i class="fa fa-file-pdf-o text-orange"></i> <span>Laporan</span>
+												<span class="pull-right-container">
+													<i class="fa fa-plus-circle pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu">
+												<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Laporan/Kunjungan"><i class="fa fa-circle-o text-orange"></i> Kunjungan</a></li>
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Laporan/RencanaKunjunganKontrol"><i class="fa fa-circle-o text-orange"></i> <small>Rencana Kunjungan Kontrol/Inap</small></a></li>
+																									<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Laporan/SepEsekutif"><i class="fa fa-circle-o text-orange"></i> Poli Esekutif</a></li>
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Laporan/Jaminan"><i class="fa fa-circle-o text-orange"></i> Jaminan</a></li>
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Laporan/SepCob"><i class="fa fa-circle-o text-orange"></i> COB</a></li>
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Laporan/Katarak"><i class="fa fa-circle-o text-orange"></i> Peserta Op.Katarak</a></li>
+													<li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Laporan/StatusPulang"><i class="fa fa-circle-o text-orange"></i> Peserta Meninggal</a></li>
+											</ul>
+										</li>
+																		
+
+
+									<li class="header">Search</li>
+									<li>
+											<a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#" data-target="#mpop_lp" data-toggle="modal" data-backdrop="static">
+												<i class="fa fa-circle-o text-aqua text-bold"></i>
+												<span>Laporan Polisi</span>
+											</a>
+
+									</li>
+									
+								</ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- =============================================== -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 597.062px;">
+            
+
+
+
+
+
+<style>
+    #chartdiv {
+        width: 100%;
+        height: 500px;
+    }
+    #chartDiagnosadiv {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .amcharts-chart-div a {display:none !important;}
+</style>
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Dashboard
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="https://vclaim.bpjs-kesehatan.go.id/VClaim/Home/Default#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <input type="hidden" id="txturl" value="https://vclaim.bpjs-kesehatan.go.id/VClaim">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-muted well well-sm">
+                Klik Logo Refresh <span class="fa fa-refresh"></span> Untuk Menampilkan hasil dashbord
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <!-- small box -->
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3 id="lblRiHariIni">0</h3>
+                    <p> Rawat Inap </p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-bed"></i>
+                </div>
+                <a id="btnHariIni" class="btn small-box-footer"><span class="fa fa-refresh"></span> Hari ini </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3 id="lblRjHariIni">0</h3>
+                    <p> Rawat Jalan</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user-md"></i>
+                </div>
+                <a id="btnHariIni2" class="btn small-box-footer"><span class="fa fa-refresh"></span> Hari ini </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3 id="lblRiKemarin">0</h3>
+                    <p> Rawat Inap </p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-bed"></i>
+                </div>
+                <a id="btnHariKemarin" class="btn small-box-footer"><span class="fa fa-refresh"></span> Kemarin </a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-md-3 col-sm-3 col-xs-12">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3 id="lblRjKemarin">0</h3>
+                    <p> Rawat Jalan </p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user-md"></i>
+                </div>
+                <a id="btnHariKemarin2" class="btn small-box-footer"><span class="fa fa-refresh"></span> Kemarin </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row">    
+        <!-- -->
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="box box-default">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Kunjungan Poli</h3>                        
+                    </div>
+                    <div class="box-body">
+                        <div class="col-md-12">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-md-2 col-sm-2 col-xs-12 control-label">Tanggal</label>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="input-group date">
+                                            <input type="text" class="form-control datepicker" id="txtTgl" placeholder="yyyy-MM-dd" maxlength="10">
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-calendar">
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <button type="button" class="btn btn-default" id="btnCariPoli" title="Klik Refresh"><span class="fa fa-refresh"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div style="margin-bottom: 10px; display: none;" class="input-group alert alert-danger col-lg-12" id="diverrorlogPoli">
+                            <span id="errorLogPoli" style="margin-left:10px;"></span>
+                        </div>
+                        <div id="chartdiv" style="display: none;"></div>          
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box box-default">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Spesialistik Ruang Rawat</h3>
+                    </div>
+                    <div class="box-body">
+                        <div class="col-md-12">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-md-2 col-sm-2 col-xs-12 control-label">Bulan</label>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <select class="form-control" id="cbbulan">
+                                            <option value="1">Januari</option>
+                                            <option value="2">Pebuari</option>
+                                            <option value="3">Maret</option>
+                                            <option value="4">April</option>
+                                            <option value="5">Mei</option>
+                                            <option value="6">Juni</option>
+                                            <option value="7">Juli</option>
+                                            <option value="8">Agustus</option>
+                                            <option value="9">September</option>
+                                            <option value="10">Oktober</option>
+                                            <option value="11">Nopember</option>
+                                            <option value="12">Desember</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <select class="form-control" id="cbtahun"><option value="">-- Pilih Tahun --</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option></select>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <button type="button" class="btn btn-default" id="btnCariSpesialistik" title="Klik Refresh"><span class="fa fa-refresh"></span></button>
+                                    </div>
+
+                                </div>    
+                            </form>
+                            
+                        </div>
+                        <div style="margin-bottom: 10px; display: none;" class="input-group alert alert-danger col-lg-12" id="diverrorlogDx">
+                            <span id="errorLogDx" style="margin-left:10px;"></span>
+                        </div>
+                        <div id="chartDiagnosadiv" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!-- /.content -->
+<script src="./Virtual Claim_files/amcharts"></script>
+
+<script src="./Virtual Claim_files/charts"></script>
+
+
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                
+            </div>
+            <div id="marquee" style="width:70%">
+              RSUD Tanjung Priok | 0116R037 - RSUD TANJUNG PRIOK | <b style="font-style:normal;font-family:Arial" id="timer">Hari : Senin, 29 Desember 2025 11:59:06 wib</b> | <b>v.  6.7.0.e </b> 
+            </div>
+        </footer>
+        <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+        <div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- Bootstrap 3.3.6 -->
+    <script src="./Virtual Claim_files/lzstring"></script>
+
+    <script src="./Virtual Claim_files/kuncier"></script>
+
+    <script src="./Virtual Claim_files/pace"></script>
+
+    <script src="./Virtual Claim_files/select2"></script>
+
+    <script src="./Virtual Claim_files/pnotify"></script>
+
+    <script src="./Virtual Claim_files/datatables"></script>
+
+    <script src="./Virtual Claim_files/bootstrap"></script>
+
+    <script src="./Virtual Claim_files/dist"></script>
+
+    <script src="./Virtual Claim_files/alasql"></script>
+
+    <script src="./Virtual Claim_files/pdf"></script>
+
+    <script src="./Virtual Claim_files/sweetalert"></script>
+
+    <script src="./Virtual Claim_files/sio"></script>
+
+    <script src="./Virtual Claim_files/notifikasijaminan"></script>
+
+    <script src="./Virtual Claim_files/kadaluarsa"></script>
+
+    <div class="dtpa" id="loading" hidden="hidden">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+    <script type="text/javascript">
+
+        var COB_NonAktif = "2021-01-01";
+        var ESEP_FASTLINE = 0;
+
+        $(document).ready(function () {
+            const para1 = document.getElementById("marquee");
+            //animate(para1);
+            getdate();
+
+            if (ESEP_FASTLINE == 1) {
+                $('#sidebar_wrapper').html('');
+                $("#main_wrapper").hide();
+                $("#containerpdf").show();
+            }
+        });
+        function getdate() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            if (h < 10) {
+                h = "0" + h;
+            }
+            if (m < 10) {
+                m = "0" + m;
+            }
+            if (s < 10) {
+                s = "0" + s;
+            }
+
+            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth();
+            var thisDay = date.getDay(),
+                thisDay = myDays[thisDay];
+            var yy = date.getYear();
+            var year = (yy < 1000) ? yy + 1900 : yy;
+
+            var tgl = ("Hari : " + thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+            var jam = (h + ":" + m + ":" + s + " wib");
+            $("#timer").html(tgl + ' ' + jam);
+            setTimeout(function () { getdate() }, 1000);
+        }
+
+        function animate(element) {
+            let elementWidth = element.offsetWidth;
+            let parentWidth = element.parentElement.offsetWidth;
+            let flag = 10;
+
+            setInterval(() => {
+                element.style.marginLeft = --flag + "px";
+
+                if (elementWidth == -flag) {
+                    flag = parentWidth - 1000;
+                }
+            }, 10);
+        }
+
+    </script>
+    <div class="modal fade" id="mpop_lp" tabindex="-1" role="dialog">
+        
+<style>
+
+    .modal-header {
+        background: #ffffff;
+    }
+
+    #myIframe {
+        height: 580px;
+    }
+</style>
+<div class="modal-dialog modal-md">
+    <input type="hidden" id="txtkdppk">
+    <input type="hidden" id="txturlcetak" value="https://irsms.korlantas.polri.go.id/api/laporan_lp/cetak?no_lp=">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" id="btnclose" class="close" data-dismiss="modal">×</button>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-md-2 col-sm-2 col-xs-12 control-label" style="font-weight:bold;color:black">Cari No.LP</label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="txtcarinolp" placeholder="nomor laporan polisi" maxlength="100">
+                            <span class="input-group-btn">
+                                <button type="button" id="btnCariLP" class="btn btn-default form-control"><i class="fa fa-search"> Cari</i></button>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-body" id="divBody" style="display: none;">
+            <dl class="dl-horizontal" style="font-size:small; font-family:Arial; padding-bottom:0.5em;">
+                <dt>No.Laporan Polisi</dt>
+                <dd id="lblnolp"></dd>
+                <dt>Tgl.Kejadian</dt>
+                <dd id="lbltglkejadian"></dd>
+                <dt>Tgl.Dilaporkan</dt>
+                <dd id="lbltgldilaporkan"></dd>
+                <dt>Polda/Polres</dt>
+                <dd id="lblpolres"></dd>
+                <dt>Tempat Kejadian</dt>
+                <dd id="lbltmpkerjadian"></dd>
+                <dt>Tipe Kecelakaan</dt>
+                <dd id="lbltipekecelakaan"></dd>
+                <dt>Tingkat Kecelakaan</dt>
+                <dd id="lbltingkatkecelakaan"></dd>
+                <dt>Jumlah Luka</dt>
+                <dd id="lblmeninggal"></dd>
+                <dd id="lblberat"></dd>
+                <dd id="lblringan"></dd>
+            </dl>
+        </div>
+        <div class="modal-footer" id="divfooter" style="display: none;">
+            <button type="button" class="btn btn-default" id="btnCetakLP"><i class="fa fa-file-pdf-o"></i> Preview</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="./Virtual Claim_files/irsms"></script>
+
+
+;
+    </div>
+
+    <!-- modal GenerateFPK -->
+    <div class="modal fade" id="ModalGenerateFPK" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title">Generate FPK ( Formulir Penagihan Klaim )</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-md-3 col-sm-3 col-xs-12 control-label">Bulan</label>
+        <div class="col-md-2 col-sm-2 col-xs-12">
+            <select class="form-control" id="bulanRealisasiFPK">
+                <option selected="selected" value="">-- Pilih Bulan--</option>
+                <option value="1">Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                <option value="4">April</option>
+                <option value="5">Mei</option>
+                <option value="6">Juni</option>
+                <option value="7">Juli</option>
+                <option value="8">Agustus</option>
+                <option value="9">September</option>
+                <option value="10">Oktober</option>
+                <option value="11">Nopember</option>
+                <option value="12">Desember</option>
+            </select>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12">
+            <select class="form-control" id="tahunRealisasiFPK"><option value="">-- Pilih Tahun --</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option></select>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3 col-sm-3 col-xs-12"></div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <button class="btn btn-primary" id="btnCariFPK" type="button"> <i class="fa fa-search"></i> Cari</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        
+        <label class="col-md-3 col-sm-3 col-xs-12 control-label">Pelayanan </label>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <select class="form-control" id="PelayananRealisasiFPK">
+                <option selected="selected" value="">-- Pilih Pelayanan--</option>
+                
+                <option value="30">Rawat Jalan Tingkat Lanjut</option>
+                <option value="40">Rawat Inap Tingkat Lanjut</option>
+                <option value="50">Pelayanan Promotif</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group" style="margin-bottom:3px;" id="">
+        <label class="col-md-3 col-sm-3 col-xs-12 control-label">No FPK</label>
+        <div class="col-sm-8">
+            <label class="control-label" id="lblNoFPK" style="color: gray;" name="Aktivitas"></label>
+        </div>
+    </div>
+    <div class="form-group" style="margin-bottom:3px;" id="">
+        <label class="col-md-3 col-sm-3 col-xs-12 control-label">Bulan Tagihan</label>
+        <div class="col-sm-8">
+            <label class="control-label" id="lblBulanTagihanFPK" style="color: gray;" name="Aktivitas"></label>
+        </div>
+    </div>
+    <div class="form-group" style="margin-bottom:3px;" id="">
+        <label class="col-md-3 col-sm-3 col-xs-12 control-label">Jumlah Data</label>
+        <div class="col-sm-8">
+            <label class="control-label" id="lblJumlahDataFKP" style="color: gray;" name="Aktivitas"></label>
+        </div>
+    </div>
+    <div class="form-group" style="margin-bottom:3px;" id="">
+        <label class="col-md-3 col-sm-3 col-xs-12 control-label">Total Tagihan</label>
+        <div class="col-sm-8">
+            <label class="control-label" id="lblTotalTagihanFPK" style="color: gray;" name="Aktivitas"></label>
+        </div>
+    </div>
+</form>
+
+<script src="./Virtual Claim_files/Realisasi"></script>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnCetakGenerateFPK" data-dismiss="modal" disabled=""><i class="fa fa-print"></i> Cetak FPK</button>
+                    <button type="button" class="btn btn-success" id="btnSimpanGenerateFPK" disabled=""><i class="fa fa-check"></i> Simpan</button>
+                    <button type="button" class="btn btn-danger" id="btnBatalGenerateFPK" data-dismiss="modal"><i class="fa fa-close"></i> Batal</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="floating-logo">
+      <img src="./Virtual Claim_files/2016 hitam.png" width="104">
+    </div>
+
+    <div class="modal fade" id="ModalKadaluarsa" tabindex="-1" role="dialog" style="display: none;">
+        
+<div class="modal-dialog modal-md">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Terdapat Klaim Status Pending yang akan expired dalam waktu Kurang Dari 2 bulan dengan perincian:</h3>
+        </div>
+        <div class="modal-body">
+            <div class="alert alert-info alert-dismissible">
+                <p style="font-size:medium">
+                    Apabila Klaim dengan status Pending diajukan kembali lebih dari 6 bulan sejak pelayanan kesehatan selesai diberikan, maka status klaim akan berubah menjadi status kedaluwarsa.
+                </p>
+                <p style="font-size:medium">Klaim yang kedaluwarsa akan menjadi tanggung jawab Fasilitas Kesehatan dan tidak dapat diajukan kembali (sesuai Perpres 82/2018).</p>
+            </div>            
+            <div id="tblKadaluarsa_wrapper" class="dt-container dt-empty-footer"><div class="dt-layout-row"><div class="dt-layout-cell dt-start "></div><div class="dt-layout-cell dt-end "><div class="dt-search"><label for="dt-search-0">Search:</label><input type="search" class="dt-input" id="dt-search-0" placeholder="" aria-controls="tblKadaluarsa"></div></div></div><div class="dt-layout-row dt-layout-table"><div class="dt-layout-cell "><div id="tblKadaluarsa_processing" class="dt-processing" role="status" style="display: none;"><div><div></div><div></div><div></div><div></div></div></div><table class="table table-bordered table-striped dataTable" cellpadding="0" id="tblKadaluarsa" style="font-size: small; width: 100%;" aria-describedby="tblKadaluarsa_info"><colgroup><col data-dt-column="0" style="width: 0px;"><col data-dt-column="1" style="width: 0px;"><col data-dt-column="2" style="width: 0px;"><col data-dt-column="3" style="width: 0px;"></colgroup>
+                <thead>
+                    <tr role="row"><th data-dt-column="0" rowspan="1" colspan="1" class="dt-orderable-none dt-type-numeric dt-ordering-asc" aria-sort="ascending" aria-label="No"><span class="dt-column-title">No</span><span class="dt-column-order"></span></th><th data-dt-column="1" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Bulan: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Bulan</span><span class="dt-column-order"></span></th><th data-dt-column="2" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc dt-type-numeric" aria-label="Tahun: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Tahun</span><span class="dt-column-order"></span></th><th data-dt-column="3" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc dt-type-numeric" aria-label="Jumlah: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Jumlah</span><span class="dt-column-order"></span></th></tr>
+                </thead><tbody><tr><td class="dt-type-numeric sorting_1">1</td><td>Juli</td><td class="dt-type-numeric">2025</td><td class="dt-type-numeric"><div class="btn-group"> <button type="button" class="btn btn-donlot btn-xs data-toggle=" modal'="">3</button> </div></td></tr><tr><td class="dt-type-numeric sorting_1">2</td><td>Agustus</td><td class="dt-type-numeric">2025</td><td class="dt-type-numeric"><div class="btn-group"> <button type="button" class="btn btn-donlot btn-xs data-toggle=" modal'="">2</button> </div></td></tr><tr><td class="dt-type-numeric sorting_1">3</td><td>September</td><td class="dt-type-numeric">2025</td><td class="dt-type-numeric"><div class="btn-group"> <button type="button" class="btn btn-donlot btn-xs data-toggle=" modal'="">226</button> </div></td></tr><tr><td class="dt-type-numeric sorting_1">4</td><td>Oktober</td><td class="dt-type-numeric">2025</td><td class="dt-type-numeric"><div class="btn-group"> <button type="button" class="btn btn-donlot btn-xs data-toggle=" modal'="">220</button> </div></td></tr></tbody>
+            <tfoot></tfoot></table></div></div><div class="dt-layout-row"><div class="dt-layout-cell dt-start "><div class="dt-info" aria-live="polite" id="tblKadaluarsa_info" role="status">Showing 1 to 4 of 4 entries</div></div><div class="dt-layout-cell dt-end "><div class="dt-paging paging_full_numbers"><button class="dt-paging-button disabled first" role="link" type="button" aria-controls="tblKadaluarsa" aria-disabled="true" aria-label="First" data-dt-idx="first" tabindex="-1">«</button><button class="dt-paging-button disabled previous" role="link" type="button" aria-controls="tblKadaluarsa" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1">‹</button><button class="dt-paging-button current" role="link" type="button" aria-controls="tblKadaluarsa" aria-current="page" data-dt-idx="0" tabindex="0">1</button><button class="dt-paging-button disabled next" role="link" type="button" aria-controls="tblKadaluarsa" aria-disabled="true" aria-label="Next" data-dt-idx="next" tabindex="-1">›</button><button class="dt-paging-button disabled last" role="link" type="button" aria-controls="tblKadaluarsa" aria-disabled="true" aria-label="Last" data-dt-idx="last" tabindex="-1">»</button></div></div></div></div>
+            
+        </div>
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-undo"></i> Tutup</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="./Virtual Claim_files/irsms"></script>
+
+
+
+
+    </div>
+
+
+</body></html>
