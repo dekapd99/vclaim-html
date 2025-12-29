@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(){$.ajax({type:"GET",url:$("#txturl").val()+"/Validasi/validSIOPPKDateNow",success:function(n){n=JSON.parse(LZString.decompressFromEncodedURIComponent(n));var t=n.pesan,t=t.split("#"),i=t[0]+"\n"+t[1];n.kode=="1"?(n.id=="1"||n.id=="3"||n.id=="6")&&Swal.fire(i):Swal.fire(i)}})}n()})
